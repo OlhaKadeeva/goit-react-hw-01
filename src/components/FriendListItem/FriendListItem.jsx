@@ -3,7 +3,7 @@ const FriendListItem = ({ item }) => {
     <div>
       <img src={item.avatar} alt="Avatar" width="48" />
       <p>{item.name}</p>
-      <p>{item.isOnline}</p>
+      <p>{item.isOnline ? "Online" : "Offline"}</p>
     </div>
   );
 };
