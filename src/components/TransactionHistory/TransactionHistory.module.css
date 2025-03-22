@@ -1,0 +1,23 @@
+.transaction {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  text-align: center;
+}
+.transaction th,
+td {
+  border: 1px solid #0f1110;
+  padding: 10px;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.title {
+  color: #f7f9f8;
+  background-color: #2a2f2c;
+}
+.table {
+  &:nth-child(even) {
+    background-color: #bec1bf;
+  }
+}

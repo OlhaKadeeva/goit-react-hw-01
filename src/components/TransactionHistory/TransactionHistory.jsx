@@ -1,11 +1,10 @@
-import clsx from "clsx";
 import css from "./TransactionHistory.module.css";
 
 const TransactionHistory = ({ items }) => {
   return (
-    <table>
+    <table className={css.transaction}>
       <thead>
-        <tr>
+        <tr className={css.title}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -14,8 +13,7 @@ const TransactionHistory = ({ items }) => {
 
       <tbody>
         {items.map((transaction) => (
-          //   <item key={id} item={transaction} />
-          <tr key={transaction.id}>
+          <tr className={css.table} key={transaction.id}>
             <td>{transaction.type}</td>
             <td>{transaction.amount}</td>
             <td>{transaction.currency}</td>
