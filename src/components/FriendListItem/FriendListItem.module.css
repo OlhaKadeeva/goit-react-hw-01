@@ -1,0 +1,20 @@
+.image {
+  height: 100%;
+  width: 98%;
+}
+.name {
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 0.5;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: 100;
+}
+.green {
+  color: #09b545;
+}
+.red {
+  color: #f12828;
+}

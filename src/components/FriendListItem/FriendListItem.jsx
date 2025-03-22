@@ -4,9 +4,13 @@ import css from "./FriendListItem.module.css";
 const FriendListItem = ({ item }) => {
   return (
     <div>
-      <img src={item.avatar} alt="Avatar" width="48" />
-      <p>{item.name}</p>
-      <p>{item.isOnline ? "Online" : "Offline"}</p>
+      <img className={css.image} src={item.avatar} alt="Avatar" width="48" />
+      <p className={css.name}>{item.name}</p>
+      {item.isOnline ? (
+        <p className={clsx(css.status, css.green)}>Online</p>
+      ) : (
+        <p className={clsx(css.status, css.red)}>Offline</p>
+      )}
     </div>
   );
 };

@@ -1,18 +1,14 @@
-.container {
-  width: 700px;
-  min-height: 700px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  border: 4px solid, black;
+.wraper {
+  border: 4px solid, #0d0d0d;
   border-radius: 16px;
+  min-height: 700px;
 }
-
 .image {
   height: 400px;
   width: 400px;
   margin-top: 30px;
   border-radius: 50%;
-  background-color: rgb(49, 48, 48);
+  background-color: #3f3f3f;
 }
 .nameText {
   font-size: 3.5rem;
